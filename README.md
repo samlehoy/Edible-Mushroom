@@ -13,6 +13,21 @@ Aplikasi web interaktif berbasis **Streamlit** untuk memprediksi apakah jamur am
 
 ---
 
+## 🌐 Cara Deploy ke Streamlit Cloud
+
+```
+1. Push project ini ke GitHub (public atau private repo).
+2. Buka https://streamlit.io/cloud.
+3. Klik "New App".
+4. Pilih:
+      - > Repository: username/nama-repo
+      - > Branch: main
+      - > File: app.py
+5. Klik Deploy.
+````
+
+
+
 ## 🚀 Cara Menjalankan Secara Lokal
 
 1. **Clone repositori**
@@ -20,9 +35,21 @@ Aplikasi web interaktif berbasis **Streamlit** untuk memprediksi apakah jamur am
 git clone https://github.com/username/nama-repo.git
 cd nama-repo
 ````
-2. **(Opsional) Untuk virtual environment
+
+2. **(Opsional) Untuk virtual environment**
 ````
 python -m venv env
 source env/bin/activate  # Untuk Mac/Linux
 env\Scripts\activate     # Untuk Windows
 ````
+
+3. **Install dependency**
+````
+pip install -r requirements.txt
+````
+
+4. **Jalankan aplikasi**
+````
+streamlit run app.py
+````
+
