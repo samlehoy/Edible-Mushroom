@@ -19,3 +19,10 @@ Aplikasi web interaktif berbasis **Streamlit** untuk memprediksi apakah jamur am
 ```bash
 git clone https://github.com/username/nama-repo.git
 cd nama-repo
+````
+2. **(Opsional) Untuk virtual environment
+````
+python -m venv env
+source env/bin/activate  # Untuk Mac/Linux
+env\Scripts\activate     # Untuk Windows
+````
