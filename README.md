@@ -1,5 +1,7 @@
 # 🍄 Prediksi Jamur: Bisa Dimakan atau Beracun?
 
+[![Streamlit App](https://img.shields.io/badge/🔗%20Coba%20Aplikasi%20Streamlit%20Live-blue?style=for-the-badge)](https://mushroom-edible.streamlit.app/)
+
 Aplikasi web interaktif berbasis **Streamlit** untuk memprediksi apakah jamur aman dikonsumsi atau beracun, **Random Forest** sebagai model yang dilatih dari dataset Mushroom.
 
 ---
