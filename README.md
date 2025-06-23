@@ -1,2 +1,2 @@
-# ediblemushroom
-Edible mushroom with machine learning
+# Edible Mushroom 
+Edible mushroom with Random Forest
