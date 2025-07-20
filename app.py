@@ -89,14 +89,22 @@ if page == "🔮 Prediksi":
         edible_prob = proba[0] * 100
         poisonous_prob = proba[1] * 100
 
-        if prediction == 0:
-            st.success(f"✅ Jamur ini DIPERKIRAKAN **AMAN DIMAKAN**")
+        # Tentukan kategori confidence berdasarkan probabilitas edible
+        if edible_prob > 72:
+            hasil = '✅ Jamur ini DIPERKIRAKAN AMAN DIMAKAN (Confidence Tinggi)'
+        elif 50 <= edible_prob <= 72:
+            hasil = '⚠ Jamur ini DIPERKIRAKAN AMAN DIMAKAN (Confidence Sedang)'
         else:
-            st.error(f"☠️ Jamur ini DIPERKIRAKAN **BERACUN**")
+            hasil = '❌ Jamur ini TIDAK DISARANKAN UNTUK DIMAKAN (Confidence Rendah)'
+
+        # Tampilkan hasil
+        st.markdown(f"### 🧠 Hasil Prediksi:")
+        st.info(hasil)
 
         st.markdown(f"### 📊 Probabilitas:")
         st.markdown(f"- ✅ Bisa dimakan: **{edible_prob:.2f}%**")
         st.markdown(f"- ☠️ Beracun: **{poisonous_prob:.2f}%**")
+
 
 # ================================
 # Halaman DASHBOARD
